@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<meta  chartset="utf-8"/>
+<meta name="author" content="whz" charset="utf-8"  http-equiv="refresh" content="5"/>
+<style type="text/css">
+/*动画*/
+@keyframes bgchange{from{background:red;}to{background:green;}}
+/*列表样式*/
+ul{ list-style-position:outside;}
+
+div{border:2px solid;resize:both;overflow:auto; display:block; transform:translate(50px,100px);}
+.one{color:green;}
+.two{color:red;}
+.three{color:blue;}
+
+ body{background-color:yellow;
+color:green;} 
+h2{color:blue;} 
+html{color:red;}
+/*伪类选择器*/
+a:link{color:red}
+a:visited{color:#333}
+a:hover{color:#F3C}
+a:active{color:bule}
+/*伪元素选择器的使用*/
+p.three:first-letter{color:#FF3}
+#box{width:600}
+#box1{height:50px; background:yellow;}
+#subox{ box-shadow:inset; border:3px; border-radius:25px;}
+/*target选择器*/
+:target{border:2px solid#0F3; background-color:#F69;}
+p b{color:red;text-decoration:underline;}/*元素选择器嵌套，设置p中嵌套的b元素文字为绿色，带下划线*/
+</style>
+
+<p style="color:red;font-size:30px;">内联样式的使用，覆盖了内部样式</p>
+<p><b>网页呈现黄色背景，</b>文字为绿色</p> 
+</head>
+
+<body >
+<script type="text/javascript">
+function test(){
+	
+	
+}
+var arry=[];
+var arr=new Array();
+str1="I'm a student";
+str2='He says:"It is easy"';
+str3=str1+str2;
+str4='学习\'JavaScript\'';
+var number=34;
+var num=023;
+var ss=0x3f;
+
+ window.onload=function(){
+	var box= document.getElementById("boxx");
+	var box1= document.getElementById("boxx1");
+	box.onmouseover=function(event){
+		box1.style.display="block"; 
+ }
+ box.onmouseout=function(event){
+	box1.style.display="none"; 
+ }};
+</script>
+<frameset>
+</frameset>
+<progress max="100" value="50">
+<span>70</span>%
+</progress>
+<p class="one" >class选择器1</p>
+<p class="two">class选择器2</p>
+<p class="three">class选择器3</p>
+<div id="box">
+<div id="box1">电话</div>
+<div id="subox">
+<div>短信</div>
+<div>qq</div>
+</div>
+</div>
+
+<div id="boxx">测试快1</div>
+<div id="boxx1">测试快2</div>
+<h2 > <b>是的放假</b>了</h2>
+
+<hr/>
+<p align="center">
+<a href="#No 1">第一节</a><br /> <b>是的放假</b><strong>第一</strong><del>是删除</del>逼 <br /> 白日一啥不该记</p>
+<table border="1" title="表格title" cellpadding="10" cellspacing="10"><tr> <td>吃饭</td><td>吃2饭</td><td>吃3饭</td></tr>
+
+<td>喝茶</td><td>吃2饭</td><td>吃3饭</td></tr></table>
+<a name="No 1">秋光</a> 
+<a href="www.baidu.com">百度2</a>
+ 
+	<a name="fsd"> fsdfdsf</a>
+    <a>是对方的身份</a>
+
+
+<a href="http://www.baidu.com" > <img src="bitmap/icon.jpg" width="200" height="200" title="这是一个图片" alt="替换文字" ismap="ismap" /></a>Shfsdfsfdsfd
+<p>
+<img src="bitmap/image3.png" usemap="#pictures"/>
+<map name="pictures" id="pic">
+<area shape="rect" coords="60,25,425,126" href="www.baidu.com" target="_blank" />
+</map>
+<ol>
+<li> 列表1</li>
+<li>列表而</li>
+</ol>
+<br />
+<ul>
+<li>无序列表1</li>
+<li>无序聊表2</li>
+</ul>
+<dl>
+<dt>自定义list标题</dt>
+<dd><strong>内容</strong></dd>
+<dt>户外运动</dt>
+<dd>登山鞋</dd><dd>冲锋衣</dd>
+</dl>
+<form>
+<fieldset>
+<legend>标签定义组标题_个人信息</legend>
+<h3>新用户注册</h3>
+姓名：<input type="text" name="user" value="whz"/><br />
+密码：<input type="number" name="pwd" />
+<p>请选择你的特长：
+<input type="checkbox" name="basketball"/>网页制作
+<input type="checkbox" name="footbal" />软件开发
+<input type="checkbox" name="table tennis" />软件测试
+</p>
+
+<p>
+请选择你的班级
+</p>
+<select >
+<option value="应用">软件1402</option>
+<option value="网络">网路络343</option>
+</select><br />
+<input type="button" value="确定" />
+<input type="submit" value="提交" />
+<input type="reset" value="取消" />
+<button  value="button" type="submit" name="fsd"> </button>
+</fieldset>
+</form>
+</body>
+</html>

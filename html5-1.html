@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta  http-equiv="refresh" content="5"; url="http://www.baidu.com">
+<title>Html5学习</title>
+<link rel="stylesheet" type="text/css" > 
+
+<style>h2{color:green; font-style:italic;}
+/*属性选择器E[att^$，关系选择器(子代选择器，兄弟选择器）*/
+h2:nth-child();nth-last-child();{}
+:target{background:yellow; font-weight:600}
+p{text-indent:50px; font-size:30px; white-space:pre; text-shadow:10px 10px 10px red,20px 20px 20px green;}/*首行缩进*/
+strong,h3{margin:20; line-height:18px; font-family:Arial,"宋体","微软雅黑"}/*必须用英文状态下的，隔开，英文必须在中文之前，英文一般不需要加引号*/
+.break_word{ word-wrap:break-word;}
+.text{text-transform:uppercase; text-decoration:line-through;}
+.letter{letter-spacing:20px}
+.word{word-spacing:20px}<br>
+a:link,a:visited{
+	 color:pink;
+}
+a:hover{text-decoration:underline;color:green;}
+</style>
+</head>
+</head>
+<h1 align="center">标题一</h1>
+<p align="center"><em><strong>传智播客</strong></em><del>删除信息</del><ins>加下划线信息</ins>云课堂上线啦，可以实现晚上在家学习</p>
+<p>&nbsp;空格&amp;&quot;</p>
+<nav>
+<ol start="8" reversed>
+<li><a href="#one">苹果</a></li>
+<li><a href="#"></a>梨子</li>
+<li><a href="#"></a>橡胶</li>
+
+</ol>
+</nav>
+<dl>
+<dl>名词</dl>
+<dd>其解释</dd>
+</dl>
+
+<article>
+
+<header>
+<details>
+<summary>details标题</summary>
+<ul>
+<li contenteditable="true">列表一</li>
+<li contenteditable="true">列表儿</li>
+</ul>
+</details>
+<p>
+空天猎：<meter max="100" value="50" min="0" high="80" low="60"></meter>
+</p>
+<h2>第一章</h2></header>
+<p class="one" id="one">ying wen da        xie,        我在这里设置了好多空格</p>/*html中不论源码有多少空格，但浏览器只会显示一个空格*/
+<section>
+<header>
+<hgroup>
+<h2>hgroup用于将<mark>多个</mark>标题组成一个标题组</h2>
+<h3><a>第一节</a></h3>
+<p style="color:green">愿你路过繁华依旧淡泊，愿你经历荒凉仍然单纯！</p>
+<cite spellcheck="true">--------吴海忠</cite>
+</hgroup>
+</header>
+</section>
+<section>
+<header>
+<h3><a href="#two">第二节</a></h3>
+</header>
+</section>
+<aside>其他相关文章</aside>
+<footer>
+<b>文章底部</b>
+</footer>
+</article>
+<aside>
+右侧菜单
+</aside>
+<hr size="3" color="#CCFF33">
+<figure id="two">
+figure元素用于定义独立的流内容（图像，图标，照片，代码）
+<figcaption>figcaption是figure的标题</figcaption>
+</figure>
+<body>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+/*首先要删除浏览器默认样式*/
+*{list-style:none; outline:none}
+/*全局控制*/
+body :not(dl){  background-position:center; background-repeat:no-repeat; background-size: contain;
+font-family:"微软雅黑";  list-style:none; margin:0; padding:0;}
+
+.father{ margin:10px auto; width:300px; height:300px; padding:10px; background:#333; border:1px solid #000;
+position:relative;
+	
+}
+.child-01,.child-02,.child-03{ width:100px; height:50px; line-height:50px; background:#F00; border:1px solid dashed; margin:10px; padding:10px; 	
+}
+.child-02{
+	position:absolute; left:150px; top:100px; }
+a{
+	text-indent:2em; display:inline-block; font-size:22px; color:yellow; cursor:pointer;
+}
+
+a:line,a:visited{
+	opacity:0.5;
+	background-color:rgba(233,23,12,0.5);
+	text-decoration:none;}
+	a:hover{text-decoration:underline; color:pink;}
+	dl{display:none ; text-align:center}/*当加载页面完成时显示效果为影藏说*/
+	dd{
+		color:#333;
+	}
+	dd:before{content:
+	}
+	dd:nth-child(odd){color:#0F9}
+	:target{display:block}
+	ul{ width:300px ; height:50px; background:#333; position:absolute; right:30px; 
+	bottom:30px; opacity:0.5; border-radius:8px; line-height:50px; text-align:left;
+		 
+	}
+	li{width:20px; height:20px; border-radius:50%; background:#00C;  margin:20px; display:inline-block}
+</style>
+</head>
+
+<body>
+<h2>网页设计软件列表</h2>
+<div></div>
+<hr color="#00CC33" width="760">
+<nav>
+<a href="#intr1" id="one">PhotoShop</a>
+<a herf="#intr2" id="two">Instrator</a>
+<a href="#intr3" id="two">Dreamweaver</a>
+<a href="#intr4" id="two">FireWorks</a>
+</nav>
+<hr color="#00CC33" width="760">
+<dl id="intr1">
+<dt ><img src="file:///C|/Users/acer/Desktop/bitmap/icon.jpg"></dt>
+<dd>Photoshop是一款<em>超S极设计神器</em>给画面来点动感吧</dd>
+<dd>Photoshop处理以<em>像素构成的图像</em>，可以有效地进行图片编辑调整工作</dd>
+<dd>Photoshoo有很多功能，在图像、图形、文字、出版、等各方面都有涉及</dd>
+<dd>Photoshop在制作建筑效果图包括许多三维场景时，常常要在Photoshop进行调整</dd>
+
+</dl>
+<dl id="intr2">
+<dt ><img src="bitmap/letter.bg.jpg"></dt>
+<dd>Instrator是一款<em>超S极设计神器</em>给画面来点动感吧</dd>
+<dd>Instratorp处理以<em>像素构成的图像</em>，可以有效地进行图片编辑调整工作</dd>
+<dd>Instrator有很多功能，在图像、图形、文字、出版、等各方面都有涉及</dd>
+<dd>Instrator在制作建筑效果图包括许多三维场景时，常常要在Photoshop进行调整</dd>
+
+</dl>
+<dl id="intr3">
+<dt ><img src="bitmap/viewphoto.jpg"></dt>
+<dd>Dreamweaver是一款<em>超S极设计神器</em>给画面来点动感吧</dd>
+<dd>Dreamweaver处理以<em>像素构成的图像</em>，可以有效地进行图片编辑调整工作</dd>
+<dd>Dreamweaver有很多功能，在图像、图形、文字、出版、等各方面都有涉及</dd>
+<dd>Dreamweaver在制作建筑效果图包括许多三维场景时，常常要在Photoshop进行调整</dd>
+
+</dl>
+<dl id="intr4">
+<dt ><img src="file:///C|/Users/acer/Desktop/bitmap/icon.jpg"></dt>
+<dd>FireWorks是一款<em>超S极设计神器</em>给画面来点动感吧</dd>
+<dd>FireWorks处理以<em>像素构成的图像</em>，可以有效地进行图片编辑调整工作</dd>
+<dd>FireWorks有很多功能，在图像、图形、文字、出版、等各方面都有涉及</dd>
+<dd>FireWorks在制作建筑效果图包括许多三维场景时，常常要在Photoshop进行调整</dd>
+
+</dl>
+<div class="father">
+<div class="child-01">child-01</div>
+<div class="child-02">child-02</div>
+<div class="child-03">child-03</div>
+</div>
+<ul> 
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</body>
+</html>
